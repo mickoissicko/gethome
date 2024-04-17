@@ -3,17 +3,17 @@
 #endif
 
 #ifndef _WIN32
-    #include "os/linux.h"
+    #include "linux/linux.h"
     static char* gethome();
 
 /**
 * #elif __APPLE__
-*     #include "os/macos.h"
+*     #include "macos/macos.h"
 *     static char* gethome();
 **/
 
 #else
-    #include "os/win32.h"
+    #include "windows/win32.h"
     static char* gethome();
 #endif
 
